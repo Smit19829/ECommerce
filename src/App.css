@@ -1,0 +1,32 @@
+.cart-sidebar {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 100%;
+  max-width: 350px;
+  height: 100vh;
+  background-color: #fff;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  transition: right 0.3s ease-in-out;
+  z-index: 1050;
+}
+
+.cart-sidebar.open {
+  right: 0;
+}
+
+.cart-header {
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-body {
+  max-height: calc(100vh - 60px);
+  overflow-y: auto;
+}
+
+@media (max-width: 576px) {
+  .cart-sidebar {
+    max-width: 100%;
+  }
+}
